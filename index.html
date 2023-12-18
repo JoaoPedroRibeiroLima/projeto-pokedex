@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div id="pokedex">
+            <div id="pokemon_image">
+                <img src="" alt="" id="pokemon_img">
+            </div>
+            <div id="pokemon_data">
+                <span id="pokemon_data_number" class="pokemon_data_span"></span><span id="pokemon_data_name" class="pokemon_data_span"></span>
+            </div>
+            <form>
+                <div id="user_input_text">
+                    <input type="search" name="pokemon_search_input" id="pokemon_search_input" placeholder="Name or Number" autocomplete="off">
+                </div>
+                <div id="user_input_buttons">
+                    <input type="button" id="btn_prev" class="btn" value="Prev &lt;"></input>
+                    <input type="button" id="btn_next" class="btn" value="Next &gt;"></input>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

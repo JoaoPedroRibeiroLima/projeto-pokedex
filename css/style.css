@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+:root{
+    --colorgradient0: #7573ff;
+    --colorgradient1: #bdbdff;
+    --colorbottondefault: #545454;
+    --colorbottonpressed: #646464;
+    --colorname: #545454;
+    --colornumber: #646464;
+}
+
+main {
+    background-image: linear-gradient(180deg, var(--colorgradient0), var(--colorgradient1));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokedex {
+    background-image: url("../images/pokedex.png");
+    background-size: cover;
+    width: 355px;
+    height: 540px;
+    position: relative;
+}
+
+#pokemon_image {
+    background-color: #54545433;
+    width: 61%;
+    height: 27%;
+    position: absolute;
+    left: 55px;
+    top: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokemon_data{
+    position: absolute;
+    bottom: 215px;
+    right: 80px;
+}
+
+.pokemon_data_span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#pokemon_data_number {
+    color: var(--colornumber);
+}
+
+#pokemon_data_name {
+    color: var(--colorname);
+}
+
+#user_input_text {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 130px;
+}
+
+#pokemon_search_input {
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: 7px solid #000;
+    box-shadow: -5px 5px 1px rgb(151, 151, 151);
+}
+
+#user_input_buttons {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 40px;
+}
+
+.btn {
+    padding: 10px;
+    width: 25%;
+    background-color: var(--colorbottondefault);
+    color: #fff;
+    border-radius: 5px;
+    border-style: 7px solid #000;
+    box-shadow: -5px 5px 1px rgb(53, 53, 53);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: none;
+    background-color: var(--colorbottonpressed);
+}
