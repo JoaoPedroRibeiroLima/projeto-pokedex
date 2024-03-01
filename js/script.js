@@ -50,7 +50,7 @@ function renderPokemon(user_input) {
 
 
 POKEMON_SEARCH_INPUT.addEventListener('input', () => {
-    renderPokemon(POKEMON_SEARCH_INPUT.value)
+    renderPokemon(POKEMON_SEARCH_INPUT.value.toLowerCase()) // resetado para minusculo
 })
 
 BTN_NEXT.addEventListener("click", () => {
